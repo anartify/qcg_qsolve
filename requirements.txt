@@ -22,10 +22,4 @@ qiskit-aqua==0.9.5
 qiskit-ibmq-provider==0.17.0
 qiskit-ignis==0.6.0 
 qiskit-terra==0.18.3
-numpy-base==1.16.2
 python ==3.7
-mkl ==2019.1
-click >=5.1
-itsdangerous ==0.24
-jinja2 ==2.10
-werkzeug ==0.14
