@@ -75,8 +75,9 @@ def hhl(A,b):
     quantum_norm, quantum_vector = hhl_solver(matrix,vector)
     classical_vector, classical_norm =check_classical(matrix,vector)
     
-    quantum_vector = quantum_vector*np.linalg.norm(b)
-    classical_vector = classical_vector*np.linalg.norm(b)
+    quantum_vector = quantum_vector*np.linalg.norm(vector)
+    classical_vector = classical_vector*np.linalg.norm(vector)
+
     if ( abs(quantum_norm - classical_norm) <1e-4) : 
         stmt = str(str3) + "... Classical_x = " + str(classical_vector) + "... Quantum_x = " +str(quantum_vector)
         return stmt 
