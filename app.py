@@ -27,9 +27,10 @@ def Data(A, b):
             'b': b}
     return data
 
-
-@app.route('/api/q?A=<string:A>&b=<string:b>', methods=['POST','GET'])
-def result(A,b):
+@app.route('/api/', methods=['POST','GET'])
+def result():
+    A  = request.args.get('A', None)
+    b  = request.args.get('b', None)
     data = Data(A, b)
     return jsonify(data)
 

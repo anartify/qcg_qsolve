@@ -106,7 +106,7 @@ class QSolveCalculator {
                   b += ']';
             }
             let stmt; let Globalthis = this;
-            const api_url = "/api/q?A=" + A + "&b=" + b;
+            const api_url = "/api/?A=" + A + "&b=" + b;
             fetch(api_url)
                .then(response => response.json())
                .then(function (data) {
