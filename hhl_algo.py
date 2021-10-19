@@ -77,9 +77,12 @@ def hhl(A,b):
     
     
     if ( abs(quantum_norm - classical_norm) <1e-4) : 
-        return str3, classical_vector, quantum_vector 
+        stmt = str(str3) + "... Classical_x = " + str(classical_vector) + "... Quantum_x = " +str(quantum_vector)
+        return stmt 
     
     elif ( abs(quantum_norm - classical_norm) >1e-4  and abs(quantum_norm - classical_norm) <1e-1):
-        return str2,classical_vector, quantum_vector
+        stmt = str(str2) + "... Classical_x = " + str(classical_vector) + "... Quantum_x = " +str(quantum_vector)
+        return stmt
     else:
-        return str1,classical_vector
+        stmt = str(str1) + "... Classical_x = " + str(classical_vector)
+        return stmt
