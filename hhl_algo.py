@@ -1,10 +1,7 @@
 import numpy as np
 
 # Importing standard Qiskit libraries
-from qiskit import QuantumCircuit, transpile, Aer, IBMQ
-from qiskit.tools.jupyter import *
-from qiskit.visualization import *
-from qiskit.providers.aer import QasmSimulator
+from qiskit import QuantumCircuit
 from qiskit.algorithms.linear_solvers.hhl import HHL
 from qiskit.quantum_info import Statevector 
 from qiskit.algorithms.linear_solvers.numpy_linear_solver import NumPyLinearSolver
