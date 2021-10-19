@@ -1,1 +1,1 @@
-worker = Qsolve_api.py
+web: gunicorn Qsolve_api:app
