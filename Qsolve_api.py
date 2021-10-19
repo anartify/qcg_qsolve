@@ -1,6 +1,5 @@
 import flask
 from flask import request, jsonify, render_template
-from hhl_algo import hhl
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
@@ -28,7 +27,7 @@ def Data(A, b):
     success = False
     results = None
     if A != None and b != None:
-        results = hhl(A, b) #here A and b are matrix.toString()
+        results = "Work in Progress" #here A and b are matrix.toString()
         success = True
     data = {'success': success,
             'results': results,
