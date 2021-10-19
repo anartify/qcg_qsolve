@@ -30,7 +30,6 @@ stevedore>=3.0.0
 symengine>=0.8 ; platform_machine == 'x86_64' or platform_machine == 'aarch64' or platform_machine == 'ppc64le' or platform_machine == 'amd64' or platform_machine == 'arm64'
 tweedledum>=1.1,<2.0
 flask==1.0.2
-numpy==1.16.2
 qiskit==0.31.0
 qiskit-aer==0.9.1 
 qiskit-aqua==0.9.5 
