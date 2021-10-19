@@ -20,8 +20,11 @@ def Data(A, b):
     success = False
     results = None
     if A != None and b != None:
-        results = hhl(A, b) #here A and b are matrix.toString()
-        success = True
+        try:
+            results = hhl(A, b) #here A and b are matrix.toString()
+            success = True
+        except:
+            results = ":( An error occurred! Matrices should be orthonormal. Kindly check for the same; If that's not the issue then developers have to screw up heads a lil bit more!"
     data = {'success': success,
             'results': results,
             'A': A,
