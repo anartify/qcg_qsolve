@@ -22,7 +22,6 @@ qiskit-aqua==0.9.5
 qiskit-ibmq-provider==0.17.0
 qiskit-ignis==0.6.0 
 qiskit-terra==0.18.3
-libgcc-ng ==7.3.0
 libgfortran-ng ==7
 libopenblas ==0.3.3
 numpy-base==1.16.2
