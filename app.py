@@ -10,7 +10,7 @@ app.config["DEBUG"] = True
 def home():
     return render_template('Index.html')
 
-@app.route('/api', methods=['GET'])
+@app.route('/api', methods=['POST','GET'])
 def api_home():
     return render_template('API Intro.html')
 
@@ -37,7 +37,7 @@ def Data(A, b):
     return data
 
 
-@app.route('/api/q', methods=['GET'])
+@app.route('/api/q', methods=['POST','GET'])
 def result():
     A, b = matrix_preprocessing()
     data = Data(A, b)
