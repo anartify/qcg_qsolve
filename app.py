@@ -15,15 +15,6 @@ def api_home():
     return render_template('API Intro.html')
 
 
-def matrix_preprocessing():
-    A = None
-    b = None
-    if 'A' in request.args:
-        A = request.args['A']
-    if 'b' in request.args:
-        b = request.args['b']
-    return A, b
-
 def Data(A, b):
     success = False
     results = None
@@ -37,9 +28,8 @@ def Data(A, b):
     return data
 
 
-@app.route('/api/q', methods=['POST','GET'])
-def result():
-    A, b = matrix_preprocessing()
+@app.route('/api/q?A=<string:A>&b=<string:b>', methods=['POST','GET'])
+def result(A,b):
     data = Data(A, b)
     return jsonify(data)
 
