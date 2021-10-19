@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>QSolve</title>
+   <link href="https://fonts.googleapis.com/css?family=Josefin Sans" rel="stylesheet">
+   <link rel="stylesheet" href="{{ url_for('static',filename='styles/matrix.css')}}">
+   <link rel="stylesheet" href="{{ url_for('static',filename='styles/theme.css')}}">
+   <script src="{{ url_for('static',filename='scripts/fraction.js')}}" defer></script>
+   <script src="{{ url_for('static',filename='scripts/matrix-input.js')}}" defer></script>
+   <script src="{{ url_for('static',filename='scripts/merge_everything.js')}}" defer></script>
+
+</head>
+
+<body>
+   <div class="hdr" style="padding-bottom: 0px;">QSolve</div>
+   <div class="hdr" style="font-size:20px;padding-top: 5px;">Solve Linear Equation using infamous HHL Quantum Algorithm
+   </div>
+   <div class="dim Size">
+      <span>Size : 2</span>
+   </div>
+   <!-- input matrices -->
+   <section id="input">
+      <div style="margin:auto;display: flex;">
+         <!-- matrix A -->
+         <div id="matrixA" class="matrix-input">
+
+            <div class="dimensions" style="display: none;">
+               <div class="dim row">
+                  <input class="row-in" type="text" min="2" max="2" value="2">
+               </div>
+
+               <div class="dim col">
+                  <input class="col-in" type="text" min="2" max="2" value="2">
+               </div>
+
+            </div>
+            <div class="mat_box">
+               <div class="mat_hdr">
+                  <span>Matrix <b>A</b></span><br>
+               </div>
+               <div class="input-grid" style="text-align:center; border-top: 0px;"></div>
+               <div class="mat_hdr">
+                  <button class="reset-btn">Reset</button>
+               </div>
+            </div>
+         </div>
+
+         <!-- matrix B -->
+         <div id="matrixB" class=" matrix-input">
+            <div class="mat_box">
+               <div class="mat_hdr">
+                  <span>Matrix <b>b</b></span> <br>
+               </div>
+
+               <div class="dimensions" style="display: none;">
+                  <div class="dim row">
+                     <input class="row-in" type="text" min="2" max="2" value="2">
+                  </div>
+
+                  <div class="dim col">
+                     <input class="col-in" type="text" min="1" max="1" value="1">
+                  </div>
+               </div>
+
+               <div class="input-grid" style="text-align:center; border-top: 0px;"></div>
+               <div class="mat_hdr">
+                  <button class="reset-btn">Reset</button>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <div id="qsolve" class="Size">
+      <button>Go</button>
+   </div>
+   <br>
+   <section id="display">
+   </section>
+   </main>
+</body>
+
+</html>

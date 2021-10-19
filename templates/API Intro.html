@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/theme.css')}}">
+
+</head>
+
+<body>
+
+    <div class="hdr">QSolve API</div>
+
+    <div class="out_box">
+
+        <div class="hdng">
+            <h3>Usage</h3>
+        </div>
+        <div class="in_box">
+            https://QSolve/api/q?A=<2D Array A>&b=<1D Array B>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="out_box">
+        <h3>Example</h3>
+        <div class="hdng">Url</div>
+        <div class="in_box"> http://QSolve/api/q?A=[[0,0],[0,0]]&b=[[0],[0]]</div>
+        <div class="hdng">Json Output</div>
+        <div class="in_box">
+            <pre>
+{
+  "A": "[[0,0],[0,0]]", 
+  "b": "[[0],[0]]", 
+  "results": "Statement To Print", 
+  "success": true
+}
+            </pre>
+        </div>
+    </div>
+
+</body>
+
+</html>
