@@ -1,1 +1,1 @@
-web: gunicorn Qsolve_api:app
+web: gunicorn -b :$PORT app:app
